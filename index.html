@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form 2</title>
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <h1>Test form</h1>
+
+  <form action="register.php" autocomplete="on" method="POST">
+    <fieldset>
+      <legend>Personal information</legend>
+
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" minlength="3" maxlength="20" required autocomplete="nickname" placeholder="Gil">
+      </div>
+
+      <div>
+        <label for="yBirth">Year of Birth</label>
+        <input type="number" name="year-birth" id="yBirth" min="1900" max="2023" oninput="yearsNow.innerHTML = calcAge()">
+        <output id="yearsNow">0</output>
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="xxxxx@xxxxx.xxx" required>
+      </div>
+
+      <div>
+        <label for="tel">Telephone</label>
+        <input type="tel" name="tel" id="tel" pattern="^\(\d{2}\)\s\d{4,5}-\d{4}$" placeholder="(xx) xxxx-xxxx" required>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Sex:</legend>
+
+      <div>
+        <input type="radio" name="sex" id="sexFem"><label for="sexFem">Feminine</label>
+      </div>
+
+      <div>
+        <input type="radio" name="sex" id="sexMas" checked><label for="sexMas">Masculine</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Favorite Sport:</legend>
+
+      <div>
+        <input type="checkbox" name="sportBask" id="sporBask"><label for="sporBask">Basketball</label>
+      </div>
+
+      <div>
+        <input type="checkbox" name="sportSoccer" id="sporSoc"><label for="sporSoc">Soccer</label>
+      </div>
+
+      <div>
+        <input type="checkbox" name="sportFoot" id="sporFoot"><label for="sporFoot">American Football</label>
+      </div>
+
+      <div>
+        <input type="checkbox" name="sportSwi" id="sporSwi" checked><label for="sporSwi">Swimming</label>
+      </div>
+
+      <div>
+        <input checked type="checkbox" name="sportCyc" id="sporCyc"><label for="sporCyc">Cycling</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Times:</legend>
+
+      <div>
+        <label for="price">Price</label>
+        <input type="number" name="price" id="price" placeholder="15,99" step="0.01">
+      </div>
+
+      <div>
+        <label for="data-buy">Data of purchase</label>
+        <input type="date" name="data-buy" id="data-buy" value="2023-09-27">
+      </div>
+
+      <div>
+        <label for="month-buy">Month of purchase</label>
+        <input type="month" name="month-buy" id="month-buy" required>
+      </div>
+
+      <div>
+        <label for="time-buy">Time of purchase</label>
+        <input type="time" name="time-buy" id="time-buy" required>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Password:</legend>
+
+      <div>
+        <label for="psw">Password</label>
+        <input type="password" name="password" id="psw" required autocomplete="current-password" minlength="8" maxlength="30" placeholder="12345678">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Other inputs:</legend>
+
+      <div>
+        <label for="color">Color</label>
+        <input type="color" name="color" id="color" value="#ff0000">
+      </div>
+
+      <div>
+        <label for="level">Level Programming</label>
+        <input type="range" name="levelProgramming" id="level" min="0" max="10" oninput="valueLevel.innerHTML = Number(level.value)">
+        <output id="valueLevel"></output>
+      </div>
+
+      <div>
+        <label for="selectFile">Select a file</label>
+        <input type="file" name="file" id="selectFile">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Options Inputs</legend>
+
+      <div>
+        <select name="states" id="states">
+          <option selected disable>--- Choose a state ---</option>
+
+          <optgroup label="Southeast region">
+            <option value="SP">São Paulo</option>
+            <option value="RG">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="ES">Espírito Santo</option>
+          </optgroup>
+
+          <optgroup label="South region">
+            <option value="PR">Paraná</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="RS">Rio Grande do Sul</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div>
+        <label for="food">Favorite Food</label>
+        <input type="text" name="food" id="food" list="favFood">
+        <datalist id="favFood">
+          <option value="PROG">Programmer</option>
+          <option value="WDEV">Web Developer</option>
+          <option value="GDEV">Game Developer</option>
+          <option value="UIUX">UI & UX</option>
+          <option value="TEST">Tester</option>
+        </datalist>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Text Area</legend>
+
+      <div>
+        <!-- Resize -->
+        <label for="message">Message:</label>
+        <textarea name="msg" id="message" cols="30" rows="10"></textarea>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Sum</legend>
+
+      <div>
+        <label for="n1">Number 1:</label>
+        <input type="number" name="number1" id="n1" oninput="sum.innerHTML = Number(n1.value) + Number(n2.value)">
+      </div>
+
+      <div>
+        <label for="n2">Number 2:</label>
+        <input type="number" name="number2" id="n2" oninput="sum.innerHTML = Number(n1.value) + Number(n2.value)">
+      </div>
+
+      <div>
+        <label for="sum">Sum:</label>
+        <output id="sum" name="sum">0</output>
+      </div>
+    </fieldset>
+
+    <input type="submit" value="Send">
+    <input type="reset" value="Reset">
+  </form>
+
+  <script>
+    function calcAge() {
+      let yearNow = new Date().getFullYear();
+      return yearNow - Number(yBirth.value);
+    }
+  </script>
+</body>
+
+</html>
