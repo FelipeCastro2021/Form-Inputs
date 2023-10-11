@@ -19,7 +19,7 @@
 <br>
 
 <p align="center">
- <img alt="Projeto Inputs Forms" src="">
+ <img alt="Projeto Inputs Forms" src="https://github.com/FelipeCastro2021/Form-Inputs/assets/78516563/4e52cda4-5fe2-47af-904d-69b664861523">
 </p>
 
 ## 🚀 Tecnologias
@@ -27,7 +27,7 @@
 Este projeto foi desenvolvido com as seguintes tecnologias: 
 
 ### Front end
-- HTML (Inputs, pattern, output, fieldset, legend)
+- HTML (Inputs, pattern, output, fieldset, legend, autocomplete, placeholder)
 - CSS
 - Git e Github
 
@@ -41,7 +41,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-- [Visite o projeto online]([https://felipecastro2021.github.io/Form-Inputs/])
+- [Visite o projeto online](https://github.com/FelipeCastro2021/Form-Inputs/assets/78516563/4e52cda4-5fe2-47af-904d-69b664861523)
 
 ## :memo: Licença
 
@@ -50,6 +50,6 @@ Esse projeto está sob a licença MIT.
 ---
 
 Feito por Felipe Castro Ferreira em 2023 👦🏻 👋🏻 [Venha conferir meu portfólio](https://felipecastro2021.github.io/Portfolio_FelipeCastro2022/) - Orientação: [CursoEmVideo](https://www.youtube.com/CursoEmVideo)
-Last update: 08/10/2023
+Last update: 11/10/2023
 
 [Acesse meu Linkedin](https://www.linkedin.com/in/felipe-castro-ferreira/)
